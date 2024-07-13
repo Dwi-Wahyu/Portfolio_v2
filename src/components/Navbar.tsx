@@ -5,8 +5,7 @@ import { motion, useAnimationControls } from "framer-motion";
 import { useEffect, useState } from "react";
 import { IoMdMenu } from "react-icons/io";
 import { MdClose } from "react-icons/md";
-import Logo from "../../public/image/Logo.png";
-import Image from "next/image";
+
 import { usePathname } from "next/navigation";
 
 const drawerVariants = {
@@ -25,8 +24,6 @@ export default function Navbar() {
   const controls = useAnimationControls();
 
   useEffect(() => {
-    console.log(pathname);
-
     if (sidebarOpened) {
       controls.start("open");
     } else {
@@ -71,7 +68,7 @@ export default function Navbar() {
           <a href="#home">Beranda</a>
           <a href="#about">Tentang Saya</a>
           <a href="#skill">Keahlian</a>
-          {/* <a href="#project">Proyek</a> */}
+          <a href="#project">Proyek</a>
           <MdClose
             className="text-3xl cursor-pointer"
             onClick={() => toggleSidebar(!sidebarOpened)}

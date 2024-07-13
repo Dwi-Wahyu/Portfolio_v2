@@ -124,19 +124,6 @@ export default function CommentSection() {
     }
   }
 
-  async function respond(type: string, id: string, response: string) {
-    const data = new FormData();
-    data.append("type", type);
-    data.append("id", id);
-
-    await fetch(`/api/${response}`, {
-      method: "POST",
-      body: data,
-    });
-
-    setFetchComments(true);
-  }
-
   function showSubcommentForm(id: string, name: string) {
     setReplyComments({
       id,
@@ -163,7 +150,6 @@ export default function CommentSection() {
           <p className="py-4">Komentar berhasil dipublish</p>
           <div className="modal-action">
             <form method="dialog">
-              {/* if there is a button in form, it will close the modal */}
               <button className="btn">Tutup</button>
             </form>
           </div>
@@ -177,7 +163,7 @@ export default function CommentSection() {
             type="text"
             placeholder="Nama Anda"
             name="nama"
-            className="input w-full mt-2"
+            className="input mt-2 w-full bg-[#1D232A]"
             required
           />
         </div>
@@ -185,7 +171,7 @@ export default function CommentSection() {
           <h1>Komentar</h1>
 
           <textarea
-            className="textarea w-full mt-2 min-h-32"
+            className="textarea w-full mt-2 min-h-32 bg-[#1D232A]"
             placeholder="Komentar Anda"
             name="komentar"
             required
@@ -280,7 +266,7 @@ export default function CommentSection() {
                 placeholder="Nama Anda"
                 name="nama"
                 id="subcomment-name"
-                className="input w-full mt-2 input-bordered"
+                className="outline-offset-4 border border-gray-700 bg-[#1D232A] outline-none focus:outline focus:outline-[#1D232A] text-gray-300 px-4 py-3 rounded-lg w-full mt-2"
                 required
               />
             </div>

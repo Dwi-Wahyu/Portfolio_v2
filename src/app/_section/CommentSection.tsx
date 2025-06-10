@@ -136,7 +136,7 @@ export default function CommentSection() {
   }
 
   return (
-    <section className="max-[639px]:p-10 p-20">
+    <section id="comments" className="max-[639px]:p-10 p-20">
       <h1 className="text-xl w-full text-center font-bold underline underline-offset-8">
         Komentar
       </h1>
@@ -163,7 +163,7 @@ export default function CommentSection() {
             type="text"
             placeholder="Nama Anda"
             name="nama"
-            className="input mt-2 w-full bg-[#1D232A]"
+            className="input mt-2 w-full bg-lightBlue"
             required
           />
         </div>
@@ -171,7 +171,7 @@ export default function CommentSection() {
           <h1>Komentar</h1>
 
           <textarea
-            className="textarea w-full mt-2 min-h-32 bg-[#1D232A]"
+            className="textarea w-full mt-2 min-h-32 bg-lightBlue"
             placeholder="Komentar Anda"
             name="komentar"
             required
@@ -179,7 +179,7 @@ export default function CommentSection() {
         </div>
 
         <div className="w-full flex justify-center ">
-          <button className="btn btn-active btn-neutral mt-4 shadow-lg">
+          <button className="btn btn-active btn-outline mt-4 shadow-lg">
             {isLoadingSubmit ? (
               <div className="flex gap-2 items-center">
                 <span className="loading loading-spinner loading-sm"></span>
@@ -192,24 +192,24 @@ export default function CommentSection() {
         </div>
       </form>
 
-      <div className="w-full rounded-xl p-5 bg-gray-900 shadow mt-7 ">
+      <div className="w-full rounded-xl p-5 bg-lightBlue shadow mt-7 ">
         {isLoadingFetch ? (
-          <div className="w-full rounded-xl bg-gray-900 shadow">
+          <div className="w-full rounded-xl bg-lightBlue shadow">
             <div className="flex gap-4 w-full flex-col">
               <div>
-                <div className="skeleton h-4 w-16 mb-2"></div>
-                <div className="skeleton h-4 w-80 mb-1"></div>
-                <div className="skeleton h-4 w-40"></div>
+                <div className="skeleton bg-white h-4 w-16 mb-2"></div>
+                <div className="skeleton bg-white h-4 w-80 mb-1"></div>
+                <div className="skeleton bg-white h-4 w-40"></div>
               </div>
 
               <div>
-                <div className="skeleton h-4 w-20 mb-2"></div>
-                <div className="skeleton h-4 w-64"></div>
+                <div className="skeleton bg-white h-4 w-20 mb-2"></div>
+                <div className="skeleton bg-white h-4 w-64"></div>
               </div>
 
               <div>
-                <div className="skeleton h-4 w-14 mb-2"></div>
-                <div className="skeleton h-4 w-72"></div>
+                <div className="skeleton bg-white h-4 w-14 mb-2"></div>
+                <div className="skeleton bg-white h-4 w-72"></div>
               </div>
             </div>
           </div>
@@ -217,7 +217,7 @@ export default function CommentSection() {
           <div className="grid grid-cols-1 gap-4">
             <div className="w-full grid grid-cols-1 gap-4 justify-items-center">
               <select
-                className="select shadow"
+                className="select bg-accentBlue shadow"
                 defaultValue={commentsVisible}
                 onChange={(val) =>
                   setCommentsVisible(parseInt(val.target.value))

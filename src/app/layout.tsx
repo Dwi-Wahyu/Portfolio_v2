@@ -5,7 +5,7 @@ import "./globals.css";
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Portofolio Wahyu",
+  title: "DWI WAHYU ILAHI ANGKA",
   description: "Created With Next 14",
 };
 

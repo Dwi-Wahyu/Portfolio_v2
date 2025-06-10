@@ -1,0 +1,30 @@
+/* app/globals.css */
+
+/* Definisikan variabel CSS (jika belum ada) */
+:root {
+  --background: #1a1a1a; /* Contoh warna background */
+  --white-icon: #ffffff; /* Contoh warna teks icon */
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 60s linear infinite;
+}
+
+.animate-paused:hover {
+  animation-play-state: paused;
+}
+
+@media (min-width: 768px) {
+  .animate-scroll {
+    animation-duration: 50s; /* Durasi lebih cepat di layar yang lebih besar */
+  }
+}

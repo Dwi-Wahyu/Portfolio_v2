@@ -1,26 +1,22 @@
 import Navbar from "@/components/Navbar";
 
-import ProyekSection from "./section/ProjectSection";
-import AboutSection from "./section/AboutSection";
-import SkillSection from "./section/SkillSection";
-import HomeSection from "./section/HomeSection";
-import ScrollButton from "@/components/ScrollButton";
-import CommentSection from "./section/CommentSection";
+import HomeSection from "./_section/HomeSection";
+import CommentSection from "./_section/CommentSection";
+import ArticleSection from "./_section/ArticleSection";
+import LogoScrollVelocity from "./_components/LogoScrollVelocity";
 
 export default function Home() {
   return (
-    <div className="text-white bg-gradient-to-r from-black to-gray-900">
+    <div className="text-white bg-darkBlue">
       <Navbar />
-
-      <ScrollButton />
 
       <HomeSection />
 
-      <AboutSection />
+      <div className="max-[639px]:px-5 px-20">
+        <LogoScrollVelocity />
+      </div>
 
-      <SkillSection />
-
-      <ProyekSection />
+      <ArticleSection />
 
       <CommentSection />
     </div>

@@ -7,7 +7,6 @@ import Link from "next/link";
 import { BiSolidBank } from "react-icons/bi";
 import { FaClipboardList } from "react-icons/fa";
 import { ReactNode } from "react";
-import { FaComputer } from "react-icons/fa6";
 
 function ProjectAnimatedDiv({ children }: { children: ReactNode }) {
   return (

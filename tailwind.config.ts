@@ -18,7 +18,16 @@ const config = {
       },
     },
     extend: {
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
       colors: {
+        darkBlue: "#1a202c", // Warna biru gelap utama
+        lightBlue: "#2c5282", // Warna biru yang sedikit lebih terang
+        accentBlue: "#4299e1", // Warna aksen biru
+        textLight: "#e2e8f0", // Warna teks terang
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

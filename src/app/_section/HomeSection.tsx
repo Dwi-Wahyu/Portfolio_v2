@@ -32,13 +32,19 @@ export default function HomeSection() {
 
         <div className="flex gap-3 items-center mt-3">
           <div className="hover:scale-110 cursor-pointer transition-all ease-in-out duration-300 ">
-            <Image src="/svg/github.svg" width={30} height={30} alt="" />
+            <Link href="https://github.com/Dwi-Wahyu">
+              <Image src="/svg/github.svg" width={30} height={30} alt="" />
+            </Link>
           </div>
           <div className="hover:scale-110 cursor-pointer transition-all ease-in-out duration-300 ">
-            <Image src="/svg/instagram.svg" width={30} height={30} alt="" />
+            <Link href="https://www.instagram.com/waheil?igsh=MXdibWlmaGhyY3ppaQ==">
+              <Image src="/svg/instagram.svg" width={30} height={30} alt="" />
+            </Link>
           </div>
           <div className="hover:scale-110 cursor-pointer transition-all ease-in-out duration-300 ">
-            <Image src="/svg/whatsapp.svg" width={30} height={30} alt="" />
+            <Link href="https://wa.me/6289643144013">
+              <Image src="/svg/whatsapp.svg" width={30} height={30} alt="" />
+            </Link>
           </div>
         </div>
       </div>

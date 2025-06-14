@@ -4,6 +4,7 @@ import HomeSection from "./_section/HomeSection";
 import CommentSection from "./_section/CommentSection";
 import ArticleSection from "./_section/ArticleSection";
 import LogoScrollVelocity from "./_components/LogoScrollVelocity";
+import ScrollReveal from "./_components/ScrollReveal/ScrollReveal";
 
 export default function Home() {
   return (

@@ -17,7 +17,7 @@ import { ReactNode, useRef } from "react";
 import Link from "next/link";
 import LogoScrollVelocity from "../_components/LogoScrollVelocity";
 
-export default function SkillSection() {
+export default function BackupSkillSection() {
   return (
     <section
       id="skill"
@@ -90,15 +90,17 @@ function SkillDiv({ children }: { children: ReactNode }) {
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
   return (
-    <motion.div
-      ref={ref}
-      style={{
-        scale: scaleProgress,
-        opacity: opacityProgress,
-      }}
-      className="flex flex-col items-center p-9  justify-center bg-gradient-to-t from-lightBlue to-accentBlue rounded-lg"
-    >
-      {children}
-    </motion.div>
+    <div className="overflow-hidden">
+      <motion.div
+        ref={ref}
+        style={{
+          scale: scaleProgress,
+          opacity: opacityProgress,
+        }}
+        className="flex flex-col items-center p-9  justify-center bg-gradient-to-r from-accentBlue to-blue-300 rounded-lg hover:bg-transparent transition-all"
+      >
+        {children}
+      </motion.div>
+    </div>
   );
 }

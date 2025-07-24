@@ -23,7 +23,7 @@ export default function ProjectSection() {
     {
       imageSrc: "/logo/unhas.png",
       imageAlt: "icon unhas",
-      title: "Landing Page Prodi Magister",
+      title: "Program Studi Magister Website",
       subtitle: "Fakultas Kedokteran Gigi Universitas Hasanuddin",
       technologies: [SiCodeigniter, SiMysql, SiBootstrap],
       webUrl: "https://master.dent.unhas.ac.id/",
@@ -32,7 +32,7 @@ export default function ProjectSection() {
     {
       imageSrc: "/logo/alikhwan.png",
       imageAlt: "icon alikhwan",
-      title: "Landing Page Radio Alikhwan",
+      title: "Radio Alikhwan Website",
       subtitle: "Fakultas Kedokteran Gigi Universitas Hasanuddin",
       technologies: [
         SiNuxtdotjs,
@@ -47,7 +47,7 @@ export default function ProjectSection() {
     {
       imageSrc: "/logo/komlekdam.png",
       imageAlt: "icon komlekdam",
-      title: "Landing Page Komlekdam",
+      title: "Komlekdam Website",
       subtitle: "Komlekdam XIV Hasanuddin",
       technologies: [
         SiNuxtdotjs,
@@ -62,7 +62,7 @@ export default function ProjectSection() {
     {
       imageSrc: "/logo/unhas.png",
       imageAlt: "icon unhas",
-      title: "Landing Page PPDGS Ilmu Bedah Mulut",
+      title: "PPDGS Ilmu Bedah Mulut Website",
       subtitle: "Fakultas Kedokteran Gigi Universitas Hasanuddin",
       technologies: [SiCodeigniter, SiMysql, SiBootstrap],
       webUrl: "https://maxillofacial.dent.unhas.ac.id/",

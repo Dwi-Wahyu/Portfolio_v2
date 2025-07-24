@@ -136,7 +136,7 @@ export default function CommentSection() {
   }
 
   return (
-    <section id="comments" className="max-[639px]:p-10 p-20">
+    <section id="comments" className="max-[639px]:p-10 bg-gray-900 p-20">
       <h1 className="text-xl w-full text-center font-bold underline underline-offset-8">
         Komentar
       </h1>

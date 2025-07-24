@@ -1,99 +1,174 @@
-import CardSwap, { Card } from "@/components/reactbits/CardSwap";
-import GlassIcons from "@/components/reactbits/GlassIcon";
+import SpotlightCard from "@/components/reactbits/SpotlightCard";
 import Image from "next/image";
+import Link from "next/link";
+import {
+  SiBootstrap,
+  SiCodeigniter,
+  SiGithub,
+  SiMysql,
+  SiNestjs,
+  SiNextdotjs,
+  SiNuxtdotjs,
+  SiPostgresql,
+  SiPrisma,
+  SiShadcnui,
+  SiSvelte,
+  SiTailwindcss,
+} from "react-icons/si";
+
+import { SlGlobe } from "react-icons/sl";
 
 export default function ProjectSection() {
-  const items = [
+  const projects = [
     {
-      icon: <UnhasIcon />,
-      color: "red",
-      label: "Fakultas Kedokteran Gigi Unhas",
+      imageSrc: "/logo/unhas.png",
+      imageAlt: "icon unhas",
+      title: "Landing Page Prodi Magister",
+      subtitle: "Fakultas Kedokteran Gigi Universitas Hasanuddin",
+      technologies: [SiCodeigniter, SiMysql, SiBootstrap],
+      webUrl: "https://master.dent.unhas.ac.id/",
+      githubUrl: "https://github.com/your-repo/prodi-s2",
     },
     {
-      icon: <KomlekdamIcon />,
-      color: "#1C2940",
-      label: "Komlekdam XIV Hasanuddin",
+      imageSrc: "/logo/alikhwan.png",
+      imageAlt: "icon alikhwan",
+      title: "Landing Page Radio Alikhwan",
+      subtitle: "Fakultas Kedokteran Gigi Universitas Hasanuddin",
+      technologies: [
+        SiNuxtdotjs,
+        SiNextdotjs,
+        SiPrisma,
+        SiPostgresql,
+        SiTailwindcss,
+      ],
+      webUrl: "https://radioalikhwan.com/",
+      githubUrl: "https://github.com/your-repo/radio-alikhwan",
     },
-    { icon: <AlikhwanIcon />, color: "green", label: "Radio Alikhwan" },
+    {
+      imageSrc: "/logo/komlekdam.png",
+      imageAlt: "icon komlekdam",
+      title: "Landing Page Komlekdam",
+      subtitle: "Komlekdam XIV Hasanuddin",
+      technologies: [
+        SiNuxtdotjs,
+        SiNestjs,
+        SiPrisma,
+        SiPostgresql,
+        SiTailwindcss,
+      ],
+      webUrl: "https://hubdam14hsn.tni-ad.mil.id/",
+      githubUrl: "https://github.com/your-repo/komlekdam",
+    },
+    {
+      imageSrc: "/logo/unhas.png",
+      imageAlt: "icon unhas",
+      title: "Landing Page PPDGS Ilmu Bedah Mulut",
+      subtitle: "Fakultas Kedokteran Gigi Universitas Hasanuddin",
+      technologies: [SiCodeigniter, SiMysql, SiBootstrap],
+      webUrl: "https://maxillofacial.dent.unhas.ac.id/",
+      githubUrl: "https://github.com/your-repo/ppdgs",
+    },
+    {
+      imageSrc: "/logo/unhas.png",
+      imageAlt: "icon unhas",
+      title: "E-Jadwal",
+      subtitle: "Fakultas Kedokteran Gigi Universitas Hasanuddin",
+      technologies: [
+        SiNuxtdotjs,
+        SiNestjs,
+        SiPrisma,
+        SiPostgresql,
+        SiTailwindcss,
+      ],
+      webUrl: "https://jadwal.dent.unhas.ac.id/",
+      githubUrl: "https://github.com/your-repo/e-jadwal",
+    },
+    {
+      imageSrc: "/logo/unhas.png",
+      imageAlt: "icon unhas",
+      title: "E-Logbook",
+      subtitle: "Fakultas Kedokteran Gigi Universitas Hasanuddin",
+      technologies: [
+        SiNextdotjs,
+        SiPrisma,
+        SiPostgresql,
+        SiTailwindcss,
+        SiShadcnui,
+      ],
+      webUrl: "https://logbook.dent.unhas.ac.id/",
+      githubUrl: "https://github.com/your-repo/e-logbook",
+    },
+    {
+      imageSrc: "/logo/alikhwan.png",
+      imageAlt: "icon alikhwan",
+      title: "Player Radio Alikhwan",
+      subtitle: "Fakultas Kedokteran Gigi Universitas Hasanuddin",
+      technologies: [SiSvelte, SiTailwindcss],
+      webUrl: "https://play.radioalikhwan.com/",
+      githubUrl: "https://github.com/your-repo/player-radio",
+    },
   ];
 
   return (
-    <section
-      id="project"
-      className=" bg-gray-900 overflow-hidden text-white w-full h-fit flex flex-col gap-5 "
-      style={{ height: "600px", position: "relative" }}
-    >
-      <div className="p-10 md:p-20">
-        <h1 className="text-xl w-full text-center md:text-start mb-6 font-bold underline underline-offset-8">
-          Hasil Karya
-        </h1>
+    <section id="project" className="max-[639px]:p-10 p-20">
+      <h1 className="text-xl w-full text-center font-bold mb-10 underline underline-offset-8">
+        Project
+      </h1>
 
-        <GlassIcons items={items} className="max-w-xl" />
+      <div className="grid grid-cols-1  sm:grid-cols-2 gap-5 md:gap-10 md:grid-cols-3 ">
+        {projects.map((project, index) => (
+          <SpotlightCard
+            key={index}
+            className="flex flex-col justify-between"
+            spotlightColor="rgba(0, 229, 255, 0.2)"
+          >
+            <div className="flex items-center md:items-start flex-col gap-3">
+              <Image
+                src={project.imageSrc}
+                alt={project.imageAlt}
+                width={50}
+                height={50}
+              />
 
-        {/* <div className="max-w-xl grid grid-cols-2 gap-5">
-          {items.map((item) => (
-            <SpotlightCard
-              className="flex flex-col h-40 items-center justify-center"
-              spotlightColor="rgba(66, 153, 225, 1)"
-            >
-              <h1 className="font-semibold mb-2 text-center">{item.label}</h1>
+              <div className="text-center md:text-start">
+                <h1 className="font-semibold">{project.title}</h1>
+                <h1 className="text-muted-foreground text-sm mt-1">
+                  {project.subtitle}
+                </h1>
+              </div>
 
-              {item.icon}
-            </SpotlightCard>
-          ))}
-        </div> */}
+              <div className="flex gap-4 mb-7 items-center">
+                {project.technologies.map((TechIcon, techIndex) => (
+                  <TechIcon key={techIndex} className="text-2xl" />
+                ))}
+              </div>
+            </div>
+
+            <div className="flex gap-4 relative justify-center md:justify-end items-center">
+              {project.webUrl && (
+                <Link
+                  href={project.webUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1 text-sm text-blue-500 hover:underline"
+                >
+                  <SlGlobe className="mr-1" /> Live Web
+                </Link>
+              )}
+              {/* {project.githubUrl && (
+                <a
+                  href={project.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1 text-sm text-blue-500 hover:underline"
+                >
+                  <SiGithub className="text-xl" /> GitHub
+                </a>
+              )} */}
+            </div>
+          </SpotlightCard>
+        ))}
       </div>
-      <CardSwap
-        cardDistance={60}
-        verticalDistance={110}
-        delay={5000}
-        height={230}
-        pauseOnHover={false}
-      >
-        <Card>
-          <img className="rounded-t-xl" src="/projects/jadwal.png" />
-        </Card>
-        <Card>
-          <img className="rounded-t-xl" src="/projects/radio.png" />
-        </Card>
-        <Card>
-          <img className="rounded-t-xl" src="/projects/player.png" />
-        </Card>
-        <Card>
-          <img className="rounded-t-xl" src="/projects/hubdam.png" />
-        </Card>
-        <Card>
-          <img className="rounded-t-xl" src="/projects/magister.png" />
-        </Card>
-      </CardSwap>
     </section>
-  );
-}
-
-function UnhasIcon() {
-  return (
-    <Image src={"/logo/unhas.png"} alt="icon unhas" width={50} height={50} />
-  );
-}
-
-function KomlekdamIcon() {
-  return (
-    <Image
-      src={"/logo/komlekdam.png"}
-      alt="icon komlekdam"
-      width={50}
-      height={50}
-    />
-  );
-}
-
-function AlikhwanIcon() {
-  return (
-    <Image
-      src={"/logo/alikhwan.png"}
-      alt="icon alikhwan"
-      width={50}
-      height={50}
-    />
   );
 }

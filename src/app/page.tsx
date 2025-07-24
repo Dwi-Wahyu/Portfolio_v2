@@ -2,6 +2,7 @@ import HomeSection from "./section/HomeSection";
 import CommentSection from "./section/CommentSection";
 import AboutSection from "./section/AboutSection";
 import SkillSection from "./section/SkillSection";
+import MitraSection from "./section/MitraSection";
 import ProjectSection from "./section/ProjectSection";
 
 export default function Home() {
@@ -12,6 +13,8 @@ export default function Home() {
       <AboutSection />
 
       <SkillSection />
+
+      <MitraSection />
 
       <ProjectSection />
 

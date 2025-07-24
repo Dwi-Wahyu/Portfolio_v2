@@ -9,7 +9,7 @@ export default function NQueensPage() {
       {/* Tombol Kembali */}
       <div className="mb-8">
         <Link
-          href="/"
+          href="/article"
           className="inline-flex items-center text-accentBlue hover:text-textLight transition-colors"
         >
           <svg
@@ -24,7 +24,7 @@ export default function NQueensPage() {
               clipRule="evenodd"
             />
           </svg>
-          Kembali ke Beranda
+          Kembali
         </Link>
       </div>
 

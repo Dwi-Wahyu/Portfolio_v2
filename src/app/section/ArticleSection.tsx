@@ -5,7 +5,10 @@ import Link from "next/link";
 
 export default function ArticleSection() {
   return (
-    <div id="articles" className="min-h-screen max-[639px]:p-10 p-20">
+    <div
+      id="articles"
+      className="min-h-screen mt-20 md:mt-0 max-[639px]:p-10 p-20"
+    >
       <header className="text-center mb-12">
         <h1 className="text-xl font-extrabold text-accentBlue leading-tight mb-4">
           Kumpulan Artikel Algoritma & Struktur Data

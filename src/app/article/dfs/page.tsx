@@ -7,10 +7,10 @@ import Link from "next/link"; // Import Link dari Next.js untuk navigasi
 export default function DFSArticlePage() {
   return (
     <div className="min-h-screen bg-darkBlue text-textLight p-8">
-      {/* Tombol Kembali ke Beranda */}
+      {/* Tombol Kembali */}
       <div className="mb-8">
         <Link
-          href="/"
+          href="/article"
           className="inline-flex items-center text-accentBlue hover:text-textLight transition-colors"
         >
           <svg
@@ -25,7 +25,7 @@ export default function DFSArticlePage() {
               clipRule="evenodd"
             />
           </svg>
-          Kembali ke Beranda
+          Kembali
         </Link>
       </div>
 

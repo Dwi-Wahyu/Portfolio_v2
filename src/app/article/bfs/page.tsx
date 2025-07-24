@@ -7,7 +7,7 @@ export default function BFSArticlePage() {
       <Link
         href="/"
         className="inline-flex items-center text-accentBlue hover:text-textLight transition-colors mb-4"
-        aria-label="Kembali ke beranda"
+        aria-label="Kembali"
       >
         ← Kembali
       </Link>

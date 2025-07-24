@@ -5,7 +5,28 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function AboutSection() {
-  const tab = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+  const socialLinks = [
+    {
+      href: "https://github.com/Dwi-Wahyu",
+      src: "/svg/github.svg",
+      alt: "GitHub",
+    },
+    {
+      href: "https://www.instagram.com/waheil?igsh=MXdibWlmaGhyY3ppaQ==",
+      src: "/svg/instagram.svg",
+      alt: "Instagram",
+    },
+    {
+      href: "https://wa.me/6289643144013",
+      src: "/svg/whatsapp.svg",
+      alt: "WhatsApp",
+    },
+    {
+      href: "https://www.linkedin.com/in/dwi-wahyu-ilahi-angka",
+      src: "/svg/linkedin.svg",
+      alt: "LinkedIn",
+    },
+  ];
 
   return (
     <section
@@ -33,52 +54,48 @@ export default function AboutSection() {
 
             <p className="text-sm text-justify mt-5 md:mt-0">
               Saya merupakan anak kedua dari tiga bersaudara dan saat ini
-              berdomisili di Kota Makassar, Provinsi Sulawesi Selatan.
+              berdomisili di Kota Makassar, Provinsi Sulawesi Selatan. Sejak
+              mengenal dunia teknologi, saya mulai belajar secara otodidak untuk
+              mengembangkan keterampilan sebagai seorang{" "}
+              <strong>self-taught developer</strong>, terutama dalam bidang web
+              development.
             </p>
             <p className="text-sm mt-2 text-justify">
-              Pendidikan saya di bidang teknologi dimulai di SMKN 5 Makassar,
-              dengan jurusan Teknik Komputer dan Jaringan. Di sinilah
-              ketertarikan saya terhadap dunia teknologi, khususnya pengembangan
-              web, mulai tumbuh sejak tahun 2020 dan terus berkembang hingga
-              sekarang.
+              Perjalanan formal saya di bidang teknologi dimulai di SMKN 5
+              Makassar, dengan jurusan Teknik Komputer dan Jaringan. Materi yang
+              saya pelajari pada masa itu lebih berfokus pada aspek jaringan
+              komputer dan perangkat keras (hardware), seperti perakitan
+              komputer, instalasi sistem operasi, hingga pengelolaan jaringan
+              lokal. Meskipun begitu, ketertarikan saya terhadap dunia teknologi
+              semakin kuat, khususnya dalam pengembangan web, yang mulai saya
+              tekuni sejak tahun 2020 dan terus saya pelajari secara mandiri
+              hingga kini.
             </p>
             <p className="text-sm mt-2 text-justify">
               Saat ini, saya melanjutkan studi pada Program Studi Sistem
               Informasi di Universitas Hasanuddin, sebuah program yang
               mengintegrasikan teknologi informasi dengan manajemen bisnis.
-              Melalui program ini, saya terus mengasah kemampuan dalam merancang
-              solusi digital yang selaras dengan kebutuhan organisasi.
+              Melalui program ini, saya terus mengembangkan kemampuan dalam
+              merancang solusi digital yang relevan dan selaras dengan kebutuhan
+              organisasi.
             </p>
 
             <div className="mt-4 justify-center md:justify-start flex w-full gap-3 items-center">
-              <div className="hover:scale-110 cursor-pointer transition-all ease-in-out duration-300 ">
-                <Link href="https://github.com/Dwi-Wahyu" target="_blank">
-                  <Image src="/svg/github.svg" width={30} height={30} alt="" />
-                </Link>
-              </div>
-              <div className="hover:scale-110 cursor-pointer transition-all ease-in-out duration-300 ">
-                <Link
-                  href="https://www.instagram.com/waheil?igsh=MXdibWlmaGhyY3ppaQ=="
-                  target="_blank"
+              {socialLinks.map((link, index) => (
+                <div
+                  key={index}
+                  className="hover:scale-110 cursor-pointer transition-all ease-in-out duration-300 "
                 >
-                  <Image
-                    src="/svg/instagram.svg"
-                    width={30}
-                    height={30}
-                    alt=""
-                  />
-                </Link>
-              </div>
-              <div className="hover:scale-110 cursor-pointer transition-all ease-in-out duration-300 ">
-                <Link href="https://wa.me/6289643144013" target="_blank">
-                  <Image
-                    src="/svg/whatsapp.svg"
-                    width={30}
-                    height={30}
-                    alt=""
-                  />
-                </Link>
-              </div>
+                  <Link href={link.href} target="_blank">
+                    <Image
+                      src={link.src}
+                      width={30}
+                      height={30}
+                      alt={link.alt}
+                    />
+                  </Link>
+                </div>
+              ))}
             </div>
           </div>
         </div>

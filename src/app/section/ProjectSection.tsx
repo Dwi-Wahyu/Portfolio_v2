@@ -1,9 +1,8 @@
 import CardSwap, { Card } from "@/components/reactbits/CardSwap";
 import GlassIcons from "@/components/reactbits/GlassIcon";
-import SpotlightCard from "@/components/reactbits/SpotLightCard";
 import Image from "next/image";
 
-export default function ProjectSectionDekstopScreen() {
+export default function ProjectSection() {
   const items = [
     {
       icon: <UnhasIcon />,

@@ -33,7 +33,7 @@ export default function MitraSection() {
       <CardSwap
         cardDistance={60}
         verticalDistance={110}
-        delay={5000}
+        delay={2000}
         height={230}
         pauseOnHover={false}
       >

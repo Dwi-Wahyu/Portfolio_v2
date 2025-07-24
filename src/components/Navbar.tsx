@@ -51,23 +51,18 @@ export default function Navbar() {
               }`}
             >
               <li>
-                <Link className="flex justify-center" href="/">
+                <Link className="flex justify-center" href="/#">
                   Home
+                </Link>
+              </li>
+              <li>
+                <Link className="flex justify-center" href="/#project">
+                  Project
                 </Link>
               </li>
               <li>
                 <Link className="flex justify-center" href="/article">
                   Articles
-                </Link>
-              </li>
-              <li>
-                <Link className="flex justify-center" href="/#project">
-                  Projects
-                </Link>
-              </li>
-              <li>
-                <Link className="flex justify-center" href="/#comments">
-                  Comments
                 </Link>
               </li>
             </ul>
@@ -76,7 +71,7 @@ export default function Navbar() {
           <ul className="hidden md:flex space-x-6">
             <li>
               <Link
-                href="/"
+                href="/#"
                 className="text-textLight hover:text-accentBlue transition-colors duration-200"
               >
                 Home
@@ -87,7 +82,7 @@ export default function Navbar() {
                 href="/#project"
                 className="text-textLight hover:text-accentBlue transition-colors duration-200"
               >
-                Projects
+                Project
               </Link>
             </li>
             <li>
@@ -95,15 +90,7 @@ export default function Navbar() {
                 href="/article"
                 className="text-textLight hover:text-accentBlue transition-colors duration-200"
               >
-                Articles
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/#comments"
-                className="text-textLight hover:text-accentBlue transition-colors duration-200"
-              >
-                Comments
+                Artikel
               </Link>
             </li>
           </ul>

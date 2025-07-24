@@ -3,6 +3,9 @@
 import React, { useEffect, useRef, useCallback, useMemo } from "react";
 import "./ProfileCard.css";
 
+import Image from "next/image";
+import Link from "next/link";
+
 interface ProfileCardProps {
   avatarUrl: string;
   iconUrl?: string;
@@ -341,7 +344,7 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
             />
             {showUserInfo && (
               <div className="pc-user-info">
-                <div className="pc-user-details">
+                {/* <div className="pc-user-details">
                   <div className="pc-mini-avatar">
                     <img
                       src={miniAvatarUrl || avatarUrl}
@@ -367,16 +370,16 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
                   aria-label={`Contact ${name || "user"}`}
                 >
                   {contactText}
-                </button>
+                </button> */}
               </div>
             )}
           </div>
-          <div className="pc-content">
+          {/* <div className="pc-content">
             <div className="pc-details">
               <h3>{name}</h3>
-              {/* <p>{title}</p> */}
+              <p>{title}</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </div>

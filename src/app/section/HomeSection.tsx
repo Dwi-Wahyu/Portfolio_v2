@@ -1,13 +1,14 @@
-import Image from "next/image";
+import Navbar from "@/components/Navbar";
 import RotatingText from "../_components/RotatingText/RotatingText";
-import Link from "next/link";
 import Iridescence from "@/components/reactbits/Irisdence";
 
 export default function HomeSection() {
   return (
     <main className="h-screen relative w-full">
+      <Navbar />
+
       <Iridescence
-        color={[0.1, 0.1, 0.2]}
+        color={[0.3, 0.3, 0.4]}
         mouseReact={false}
         amplitude={0.1}
         speed={1.0}
@@ -34,27 +35,6 @@ export default function HomeSection() {
               rotationInterval={2000}
             />
             <h1 className="font-semibold">Developer</h1>
-          </div>
-
-          <div className="flex gap-3 items-center mt-3">
-            <div className="hover:scale-110 cursor-pointer transition-all ease-in-out duration-300 ">
-              <Link href="https://github.com/Dwi-Wahyu" target="_blank">
-                <Image src="/svg/github.svg" width={30} height={30} alt="" />
-              </Link>
-            </div>
-            <div className="hover:scale-110 cursor-pointer transition-all ease-in-out duration-300 ">
-              <Link
-                href="https://www.instagram.com/waheil?igsh=MXdibWlmaGhyY3ppaQ=="
-                target="_blank"
-              >
-                <Image src="/svg/instagram.svg" width={30} height={30} alt="" />
-              </Link>
-            </div>
-            <div className="hover:scale-110 cursor-pointer transition-all ease-in-out duration-300 ">
-              <Link href="https://wa.me/6289643144013" target="_blank">
-                <Image src="/svg/whatsapp.svg" width={30} height={30} alt="" />
-              </Link>
-            </div>
           </div>
         </div>
       </div>

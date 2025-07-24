@@ -1,14 +1,23 @@
 "use client"; // Penting untuk komponen klien
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { FiMenu } from "react-icons/fi";
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
 
+  const pathname = usePathname();
+
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 500) {
+      let scrollLimitToChangeScrolledState = 500;
+
+      if (pathname.startsWith("/article")) {
+        scrollLimitToChangeScrolledState = 50;
+      }
+
+      if (window.scrollY > scrollLimitToChangeScrolledState) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -32,7 +41,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center max-w-7xl mx-auto">
           <h1 className="text-2xl font-bold text-accentBlue">DW</h1>
 
-          <details className="dropdown">
+          <details className="dropdown md:hidden">
             <summary className="btn bg-lightBlue  border-none shadow-none">
               <FiMenu />
             </summary>
@@ -42,13 +51,24 @@ export default function Navbar() {
               }`}
             >
               <li>
-                <Link href="/">Home</Link>
+                <Link className="flex justify-center" href="/">
+                  Home
+                </Link>
               </li>
               <li>
-                <Link href="/article">Articles</Link>
+                <Link className="flex justify-center" href="/article">
+                  Articles
+                </Link>
               </li>
               <li>
-                <Link href="#comments">Comments</Link>
+                <Link className="flex justify-center" href="/#project">
+                  Projects
+                </Link>
+              </li>
+              <li>
+                <Link className="flex justify-center" href="/#comments">
+                  Comments
+                </Link>
               </li>
             </ul>
           </details>
@@ -64,6 +84,14 @@ export default function Navbar() {
             </li>
             <li>
               <Link
+                href="/#project"
+                className="text-textLight hover:text-accentBlue transition-colors duration-200"
+              >
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link
                 href="/article"
                 className="text-textLight hover:text-accentBlue transition-colors duration-200"
               >
@@ -72,7 +100,7 @@ export default function Navbar() {
             </li>
             <li>
               <Link
-                href="#comments"
+                href="/#comments"
                 className="text-textLight hover:text-accentBlue transition-colors duration-200"
               >
                 Comments

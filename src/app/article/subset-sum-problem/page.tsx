@@ -7,7 +7,7 @@ export default function SubsetSumArticlePage() {
       {/* Tombol Kembali */}
       <div className="mb-8">
         <Link
-          href="/"
+          href="/article"
           className="inline-flex items-center text-accentBlue hover:text-textLight transition-colors"
         >
           <svg
@@ -22,7 +22,7 @@ export default function SubsetSumArticlePage() {
               clipRule="evenodd"
             />
           </svg>
-          Kembali ke Beranda
+          Kembali
         </Link>
       </div>
 

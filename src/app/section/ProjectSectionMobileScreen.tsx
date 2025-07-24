@@ -31,20 +31,16 @@ const animationVariant = {
   },
 };
 
-export default function ProyekSection() {
+export default function ProjectSectionMobileScreen() {
   return (
     <section
       id="project"
       className=" bg-gray-900 overflow-hidden text-white w-full h-fit flex flex-col gap-5 p-20 max-[639px]:p-10 "
     >
-      <div>
-        <h1 className="text-xl w-full text-center font-bold underline underline-offset-8">
-          Proyek
-        </h1>
-        <h1 className="mt-2 text-lg w-full text-center mb-6">
-          Aplikasi berbasis web
-        </h1>
-      </div>
+      <h1 className="text-xl w-full text-center mb-6 font-bold underline underline-offset-8">
+        Project Yang Telah Dikerjakan
+      </h1>
+
       <div className="w-full relative p-5 rounded-lg bg-gray-800 ">
         <ProjectAnimatedDiv>
           <BiSolidBank className="absolute -bottom-5 -right-5 w-40 h-40 text-gray-900" />

@@ -140,9 +140,6 @@ export default function CommentSection() {
       <h1 className="text-xl w-full text-center font-bold underline underline-offset-8">
         Komentar
       </h1>
-      <h1 className="mt-2 text-lg w-full text-center">
-        Tinggalkan komentar Anda
-      </h1>
 
       <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
         <div className="modal-box">
@@ -256,7 +253,7 @@ export default function CommentSection() {
             </button>
           </form>
           <h3 className="font-bold text-lg">
-            Reply Komentar {replyComments?.name}
+            Balas Komentar {replyComments?.name}
           </h3>
           <form className="mt-4" onSubmit={submitSubcomment}>
             <div className="w-full">

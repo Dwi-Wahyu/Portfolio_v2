@@ -33,7 +33,7 @@ export default function ProjectSection() {
       imageSrc: "/logo/alikhwan.png",
       imageAlt: "icon alikhwan",
       title: "Radio Alikhwan Website",
-      subtitle: "Fakultas Kedokteran Gigi Universitas Hasanuddin",
+      subtitle: "RAI FM Makassar",
       technologies: [
         SiNuxtdotjs,
         SiNextdotjs,
@@ -102,7 +102,7 @@ export default function ProjectSection() {
       imageSrc: "/logo/alikhwan.png",
       imageAlt: "icon alikhwan",
       title: "Player Radio Alikhwan",
-      subtitle: "PT Skytel Indonesia",
+      subtitle: "RAI FM Makassar",
       technologies: [SiSvelte, SiTailwindcss],
       webUrl: "https://play.radioalikhwan.com/",
       githubUrl: "https://github.com/your-repo/player-radio",

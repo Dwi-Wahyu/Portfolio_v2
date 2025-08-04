@@ -27,7 +27,7 @@ export default function ProjectSection() {
       subtitle: "Fakultas Kedokteran Gigi Universitas Hasanuddin",
       technologies: [SiCodeigniter, SiMysql, SiBootstrap],
       webUrl: "https://master.dent.unhas.ac.id/",
-      githubUrl: "https://github.com/your-repo/prodi-s2",
+      githubUrl: "",
     },
     {
       imageSrc: "/logo/alikhwan.png",
@@ -42,7 +42,7 @@ export default function ProjectSection() {
         SiTailwindcss,
       ],
       webUrl: "https://radioalikhwan.com/",
-      githubUrl: "https://github.com/your-repo/radio-alikhwan",
+      githubUrl: "https://github.com/Dwi-Wahyu/Radio-Alikhwan-New",
     },
     {
       imageSrc: "/logo/komlekdam.png",
@@ -57,7 +57,7 @@ export default function ProjectSection() {
         SiTailwindcss,
       ],
       webUrl: "https://hubdam14hsn.tni-ad.mil.id/",
-      githubUrl: "https://github.com/your-repo/komlekdam",
+      githubUrl: "https://github.com/Dwi-Wahyu/komlekdam-hasanuddin-frontend",
     },
     {
       imageSrc: "/logo/unhas.png",
@@ -66,7 +66,7 @@ export default function ProjectSection() {
       subtitle: "Fakultas Kedokteran Gigi Universitas Hasanuddin",
       technologies: [SiCodeigniter, SiMysql, SiBootstrap],
       webUrl: "https://maxillofacial.dent.unhas.ac.id/",
-      githubUrl: "https://github.com/your-repo/ppdgs",
+      githubUrl: "",
     },
     {
       imageSrc: "/logo/unhas.png",
@@ -81,7 +81,7 @@ export default function ProjectSection() {
         SiTailwindcss,
       ],
       webUrl: "https://jadwal.dent.unhas.ac.id/",
-      githubUrl: "https://github.com/your-repo/e-jadwal",
+      githubUrl: "https://github.com/Dwi-Wahyu/jadwal-frontend-nuxt3",
     },
     {
       imageSrc: "/logo/unhas.png",
@@ -96,7 +96,7 @@ export default function ProjectSection() {
         SiShadcnui,
       ],
       webUrl: "https://logbook.dent.unhas.ac.id/",
-      githubUrl: "https://github.com/your-repo/e-logbook",
+      githubUrl: "",
     },
     {
       imageSrc: "/logo/alikhwan.png",
@@ -105,7 +105,7 @@ export default function ProjectSection() {
       subtitle: "RAI FM Makassar",
       technologies: [SiSvelte, SiTailwindcss],
       webUrl: "https://play.radioalikhwan.com/",
-      githubUrl: "https://github.com/your-repo/player-radio",
+      githubUrl: "https://github.com/Dwi-Wahyu/alikhwan-player",
     },
   ];
 
@@ -145,6 +145,16 @@ export default function ProjectSection() {
             </div>
 
             <div className="flex gap-4 relative justify-center md:justify-end items-center">
+              {project.githubUrl.length != 0 && (
+                <Link
+                  href={project.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1 text-sm text-blue-500 hover:underline"
+                >
+                  <SiGithub className="mr-1" />
+                </Link>
+              )}
               {project.webUrl && (
                 <Link
                   href={project.webUrl}
@@ -152,19 +162,9 @@ export default function ProjectSection() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-1 text-sm text-blue-500 hover:underline"
                 >
-                  <SlGlobe className="mr-1" /> Live Web
+                  <SlGlobe /> Live Web
                 </Link>
               )}
-              {/* {project.githubUrl && (
-                <a
-                  href={project.githubUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-1 text-sm text-blue-500 hover:underline"
-                >
-                  <SiGithub className="text-xl" /> GitHub
-                </a>
-              )} */}
             </div>
           </SpotlightCard>
         ))}

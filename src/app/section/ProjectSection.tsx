@@ -27,7 +27,7 @@ export default function ProjectSection() {
       subtitle: "Fakultas Kedokteran Gigi Universitas Hasanuddin",
       technologies: [SiCodeigniter, SiMysql, SiBootstrap],
       webUrl: "https://master.dent.unhas.ac.id/",
-      githubUrl: "",
+      githubUrl: "https://github.com/Dwi-Wahyu/fkg-uh-study-program-site",
     },
     {
       imageSrc: "/logo/alikhwan.png",
@@ -66,7 +66,7 @@ export default function ProjectSection() {
       subtitle: "Fakultas Kedokteran Gigi Universitas Hasanuddin",
       technologies: [SiCodeigniter, SiMysql, SiBootstrap],
       webUrl: "https://maxillofacial.dent.unhas.ac.id/",
-      githubUrl: "",
+      githubUrl: "https://github.com/Dwi-Wahyu/fkg-uh-study-program-site",
     },
     {
       imageSrc: "/logo/unhas.png",

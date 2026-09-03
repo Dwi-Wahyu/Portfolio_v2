@@ -66,7 +66,7 @@ function UnhasIcon() {
 function KomlekdamIcon() {
   return (
     <Image
-      src={"/logo/komlekdam.png"}
+      src={"/logo/komlekdam.svg"}
       alt="icon komlekdam"
       width={50}
       height={50}

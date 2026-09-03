@@ -4,69 +4,88 @@ import Link from "next/link";
 import {
   SiBootstrap,
   SiCodeigniter,
+  SiDrizzle,
   SiGithub,
   SiMysql,
   SiNestjs,
   SiNextdotjs,
-  SiNuxtdotjs,
+  SiTanstack,
   SiPostgresql,
   SiPrisma,
   SiShadcnui,
   SiSvelte,
   SiTailwindcss,
+  SiNuxt,
+  SiRust,
 } from "react-icons/si";
+
+import {  } from "react-icons/si";
 
 import { SlGlobe } from "react-icons/sl";
 
 export default function ProjectSection() {
   const projects = [
+    // {
+    //   imageSrc: "/logo/unhas.png",
+    //   imageAlt: "icon unhas",
+    //   title: "Program Studi Magister Website",
+    //   subtitle: "Fakultas Kedokteran Gigi Universitas Hasanuddin",
+    //   technologies: [SiCodeigniter, SiMysql, SiBootstrap],
+    //   webUrl: "https://master.dent.unhas.ac.id/",
+    //   githubUrl: "https://github.com/Dwi-Wahyu/fkg-uh-study-program-site",
+    // },
+    // {
+    //   imageSrc: "/logo/alikhwan.png",
+    //   imageAlt: "icon alikhwan",
+    //   title: "Radio Alikhwan Website",
+    //   subtitle: "RAI FM Makassar",
+    //   technologies: [
+    //     SiNuxtdotjs,
+    //     SiNextdotjs,
+    //     SiPrisma,
+    //     SiPostgresql,
+    //     SiTailwindcss,
+    //   ],
+    //   webUrl: "https://radioalikhwan.com/",
+    //   githubUrl: "https://github.com/Dwi-Wahyu/Radio-Alikhwan-New",
+    // },
+    // {
+    //   imageSrc: "/logo/komlekdam.png",
+    //   imageAlt: "icon komlekdam",
+    //   title: "Komlekdam Website",
+    //   subtitle: "Komlekdam XIV Hasanuddin",
+    //   technologies: [
+    //     SiNuxtdotjs,
+    //     SiNestjs,
+    //     SiPrisma,
+    //     SiPostgresql,
+    //     SiTailwindcss,
+    //   ],
+    //   webUrl: "https://hubdam14hsn.tni-ad.mil.id/",
+    //   githubUrl: "https://github.com/Dwi-Wahyu/komlekdam-hasanuddin-frontend",
+    // },
+    // {
+    //   imageSrc: "/logo/unhas.png",
+    //   imageAlt: "icon unhas",
+    //   title: "PPDGS Ilmu Bedah Mulut Website",
+    //   subtitle: "Fakultas Kedokteran Gigi Universitas Hasanuddin",
+    //   technologies: [SiCodeigniter, SiMysql, SiBootstrap],
+    //   webUrl: "https://maxillofacial.dent.unhas.ac.id/",
+    //   githubUrl: "https://github.com/Dwi-Wahyu/fkg-uh-study-program-site",
+    // },
     {
-      imageSrc: "/logo/unhas.png",
+      imageSrc: "/logo/komlekdam.svg",
       imageAlt: "icon unhas",
-      title: "Program Studi Magister Website",
-      subtitle: "Fakultas Kedokteran Gigi Universitas Hasanuddin",
-      technologies: [SiCodeigniter, SiMysql, SiBootstrap],
-      webUrl: "https://master.dent.unhas.ac.id/",
-      githubUrl: "https://github.com/Dwi-Wahyu/fkg-uh-study-program-site",
-    },
-    {
-      imageSrc: "/logo/alikhwan.png",
-      imageAlt: "icon alikhwan",
-      title: "Radio Alikhwan Website",
-      subtitle: "RAI FM Makassar",
+      title: "Minmat Matkomlek",
+      subtitle: "Puskomlekad TNI AD",
       technologies: [
-        SiNuxtdotjs,
-        SiNextdotjs,
-        SiPrisma,
-        SiPostgresql,
+        SiSvelte,
+        SiMysql,
         SiTailwindcss,
+        SiShadcnui,
       ],
-      webUrl: "https://radioalikhwan.com/",
-      githubUrl: "https://github.com/Dwi-Wahyu/Radio-Alikhwan-New",
-    },
-    {
-      imageSrc: "/logo/komlekdam.png",
-      imageAlt: "icon komlekdam",
-      title: "Komlekdam Website",
-      subtitle: "Komlekdam XIV Hasanuddin",
-      technologies: [
-        SiNuxtdotjs,
-        SiNestjs,
-        SiPrisma,
-        SiPostgresql,
-        SiTailwindcss,
-      ],
-      webUrl: "https://hubdam14hsn.tni-ad.mil.id/",
-      githubUrl: "https://github.com/Dwi-Wahyu/komlekdam-hasanuddin-frontend",
-    },
-    {
-      imageSrc: "/logo/unhas.png",
-      imageAlt: "icon unhas",
-      title: "PPDGS Ilmu Bedah Mulut Website",
-      subtitle: "Fakultas Kedokteran Gigi Universitas Hasanuddin",
-      technologies: [SiCodeigniter, SiMysql, SiBootstrap],
-      webUrl: "https://maxillofacial.dent.unhas.ac.id/",
-      githubUrl: "https://github.com/Dwi-Wahyu/fkg-uh-study-program-site",
+      webUrl: "https://minmat2026.my.id/",
+      githubUrl: "",
     },
     {
       imageSrc: "/logo/unhas.png",
@@ -74,7 +93,7 @@ export default function ProjectSection() {
       title: "E-Jadwal",
       subtitle: "Fakultas Kedokteran Gigi Universitas Hasanuddin",
       technologies: [
-        SiNuxtdotjs,
+        SiNuxt,
         SiNestjs,
         SiPrisma,
         SiPostgresql,
@@ -99,20 +118,48 @@ export default function ProjectSection() {
       githubUrl: "",
     },
     {
-      imageSrc: "/logo/alikhwan.png",
-      imageAlt: "icon alikhwan",
-      title: "Player Radio Alikhwan",
-      subtitle: "RAI FM Makassar",
-      technologies: [SiSvelte, SiTailwindcss],
-      webUrl: "https://play.radioalikhwan.com/",
-      githubUrl: "https://github.com/Dwi-Wahyu/alikhwan-player",
+      imageSrc: "/logo/unhas.png",
+      imageAlt: "icon unhas",
+      title: "Library Repository",
+      subtitle: "Fakultas Kedokteran Gigi Universitas Hasanuddin",
+      technologies: [
+        SiTanstack,
+        SiRust,
+        SiPostgresql,
+        SiTailwindcss,
+      ],
+      webUrl: "https://repository.minmat2026.my.id/",
+      githubUrl: "",
     },
+    {
+      imageSrc: "/logo/unhas.png",
+      imageAlt: "icon unhas",
+      title: "E-Questionnaire",
+      subtitle: "Fakultas Kedokteran Gigi Universitas Hasanuddin",
+      technologies: [
+        SiTanstack,
+        SiRust,
+        SiPostgresql,
+        SiTailwindcss,
+      ],
+      webUrl: "https://survey.minmat2026.my.id/",
+      githubUrl: "",
+    },
+    // {
+    //   imageSrc: "/logo/alikhwan.png",
+    //   imageAlt: "icon alikhwan",
+    //   title: "Player Radio Alikhwan",
+    //   subtitle: "RAI FM Makassar",
+    //   technologies: [SiSvelte, SiTailwindcss],
+    //   webUrl: "https://play.radioalikhwan.com/",
+    //   githubUrl: "https://github.com/Dwi-Wahyu/alikhwan-player",
+    // },
   ];
 
   return (
     <section id="project" className="max-[639px]:p-10 p-20">
       <h1 className="text-xl w-full text-center font-bold mb-10 underline underline-offset-8">
-        Project
+        Projects
       </h1>
 
       <div className="grid grid-cols-1  sm:grid-cols-2 gap-5 md:gap-10 md:grid-cols-3 ">

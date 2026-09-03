@@ -3,6 +3,7 @@ import CommentSection from "./section/CommentSection";
 import AboutSection from "./section/AboutSection";
 import SkillSection from "./section/SkillSection";
 import MitraSection from "./section/MitraSection";
+import MomentsSection from "./section/MomentsSection";
 import ProjectSection from "./section/ProjectSection";
 
 export default function Home() {
@@ -12,12 +13,14 @@ export default function Home() {
 
       <AboutSection />
 
-      <SkillSection />
+      <ProjectSection />
 
       <MitraSection />
 
-      <ProjectSection />
+      <MomentsSection />
 
+      <SkillSection />
+      
       <CommentSection />
     </div>
   );

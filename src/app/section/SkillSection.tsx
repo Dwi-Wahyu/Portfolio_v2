@@ -2,13 +2,17 @@
 
 import {
   SiNextdotjs,
-  SiNuxtdotjs,
+  SiNuxt,
   SiNestjs,
+  SiRust,
+  SiDrizzle,
   SiPrisma,
   SiNodedotjs,
   SiExpress,
   SiPostgresql,
   SiMysql,
+  SiSvelte,
+  SiTanstack
 } from "react-icons/si";
 
 import { motion, useScroll, useTransform } from "framer-motion";
@@ -21,7 +25,7 @@ export default function SkillSection() {
   return (
     <section
       id="skill"
-      className="text-white w-full flex flex-col max-[639px]:p-10 p-20"
+      className="bg-gray-900 text-white w-full flex flex-col max-[639px]:p-10 p-20"
     >
       <h1 className="text-xl w-full text-center mb-14 font-bold underline underline-offset-8">
         Tech Stack
@@ -29,24 +33,41 @@ export default function SkillSection() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
         <SkillDiv>
-          <h1 className="font-semibold text-lg mb-1">Nuxt JS + Nest JS</h1>
+          <h1 className="font-semibold text-lg mb-1">Svelte + Rust</h1>
 
           <div className="flex gap-3 items-center mt-5">
-            <SiNuxtdotjs className="text-4xl md:text-7xl" />
-            <SiNestjs className="text-4xl md:text-7xl" />
-            <SiPrisma className="text-4xl md:text-7xl" />
+            <SiSvelte className="text-4xl md:text-7xl" />
+            <SiRust className="text-4xl md:text-7xl" />
+          </div>
+        </SkillDiv>
+
+         <SkillDiv>
+          <h1 className="font-semibold text-lg mb-1">SvelteKit + DrizzleKit + Postgresql</h1>
+
+          <div className="flex gap-3 items-center mt-5">
+            <SiSvelte className="text-4xl md:text-7xl" />
+            <SiDrizzle className="text-4xl md:text-7xl" />
             <SiPostgresql className="text-4xl md:text-7xl" />
           </div>
         </SkillDiv>
 
-        <SkillDiv>
-          <h1 className="font-semibold text-lg mb-1">Fullstack Node JS</h1>
+         <SkillDiv>
+          <h1 className="font-semibold text-lg mb-1">Tanstack Start + Rsbuild</h1>
 
-          <div className="flex gap-3   items-center mt-5">
-            <SiNodedotjs className="text-4xl md:text-7xl" />
-            <SiExpress className="text-4xl md:text-7xl" />
+          <div className="flex gap-3 items-center mt-5">
+            <SiTanstack className="text-4xl md:text-7xl" />
+            <SiRust className="text-4xl md:text-7xl" />
+          </div>
+        </SkillDiv>
+
+        <SkillDiv>
+          <h1 className="font-semibold text-lg mb-1">Nuxt JS + Nest JS</h1>
+
+          <div className="flex gap-3 items-center mt-5">
+            <SiNuxt className="text-4xl md:text-7xl" />
+            <SiNestjs className="text-4xl md:text-7xl" />
             <SiPrisma className="text-4xl md:text-7xl" />
-            <SiMysql className="text-4xl md:text-7xl" />
+            <SiPostgresql className="text-4xl md:text-7xl" />
           </div>
         </SkillDiv>
 
@@ -64,7 +85,7 @@ export default function SkillSection() {
           <h1 className="font-semibold text-lg mb-1">Fullstack Nuxt 4</h1>
 
           <div className="flex gap-3 items-center mt-5">
-            <SiNuxtdotjs className="text-4xl md:text-7xl" />
+            <SiNuxt className="text-4xl md:text-7xl" />
             <SiPrisma className="text-4xl md:text-7xl" />
             <SiPostgresql className="text-4xl md:text-7xl" />
           </div>

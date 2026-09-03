@@ -26,9 +26,9 @@ const LogoScrollVelocity = () => {
   return (
     <div className="relative overflow-x-hidden py-8">
       {/* Gradient Overlay Kiri */}
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-darkBlue to-transparent z-20"></div>
+      <div className="pointer-events-none absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-gray-900 to-transparent z-20"></div>
       {/* Gradient Overlay Kanan */}
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-darkBlue to-transparent z-20"></div>
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-gray-900 to-transparent z-20"></div>
 
       {/* Konten yang Bergerak */}
       <div className="flex animate-scroll hover:animate-paused gap-12 md:gap-20 w-max">

@@ -85,14 +85,6 @@ export default function Navbar() {
                 Project
               </Link>
             </li>
-            <li>
-              <Link
-                href="/article"
-                className="text-textLight hover:text-accentBlue transition-colors duration-200"
-              >
-                Artikel
-              </Link>
-            </li>
           </ul>
         </div>
       </nav>

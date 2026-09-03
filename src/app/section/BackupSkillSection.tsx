@@ -2,7 +2,7 @@
 
 import {
   SiNextdotjs,
-  SiNuxtdotjs,
+  SiNuxt,
   SiNestjs,
   SiPrisma,
   SiNodedotjs,
@@ -32,7 +32,7 @@ export default function BackupSkillSection() {
           <h1 className="font-semibold text-lg mb-1">Nuxt JS + Nest JS</h1>
 
           <div className="flex gap-3 items-center mt-5">
-            <SiNuxtdotjs className="text-4xl md:text-7xl" />
+            <SiNuxt className="text-4xl md:text-7xl" />
             <SiNestjs className="text-4xl md:text-7xl" />
             <SiPrisma className="text-4xl md:text-7xl" />
             <SiPostgresql className="text-4xl md:text-7xl" />
@@ -64,7 +64,7 @@ export default function BackupSkillSection() {
           <h1 className="font-semibold text-lg mb-1">Fullstack Nuxt 4</h1>
 
           <div className="flex gap-3 items-center mt-5">
-            <SiNuxtdotjs className="text-4xl md:text-7xl" />
+            <SiNuxt className="text-4xl md:text-7xl" />
             <SiPrisma className="text-4xl md:text-7xl" />
             <SiPostgresql className="text-4xl md:text-7xl" />
           </div>

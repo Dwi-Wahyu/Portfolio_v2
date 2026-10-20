@@ -145,6 +145,20 @@ export default function ProjectSection() {
       webUrl: "https://survey.minmat2026.my.id/",
       githubUrl: "",
     },
+    {
+      imageSrc: "/logo/smkn1selayar.webp",
+      imageAlt: "icon smkn1 selayar",
+      title: "Web Profil",
+      subtitle: "SMKN 1 Selayar",
+      technologies: [
+        SiSvelte,
+        SiMysql,
+        SiTailwindcss,
+        SiDrizzle,
+      ],
+      webUrl: "https://smkn1selayar.my.id/",
+      githubUrl: "",
+    },
     // {
     //   imageSrc: "/logo/alikhwan.png",
     //   imageAlt: "icon alikhwan",
